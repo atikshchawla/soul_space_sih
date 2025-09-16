@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:soul_space/view/screens/dashboard_page.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});
@@ -71,7 +72,11 @@ class WelcomePageState extends State<WelcomePage> {
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.black,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push( MaterialPageRoute(
+                builder: (context) => const DashboardPage(),
+              ));
+            },
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(

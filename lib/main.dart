@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:soul_space/view/screens/welcome_age.dart';
+import 'package:soul_space/view/screens/dashboard_page.dart';
+import 'package:soul_space/view/screens/welcome_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: const WelcomePage(),
+      home: const DashboardPage(),
     );
   }
 }
